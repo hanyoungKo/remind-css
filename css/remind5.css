@@ -1,0 +1,58 @@
+@font-face{
+    font-family:"작명";
+    src:url('폰트 저장된 위치');
+}
+
+
+
+body{
+    margin: 0px;
+    font-family: 'gulim','dotum','arial';
+    /*
+        gulim 이 없으면 
+        dotum 없으면 
+        arial 순으로 차례대로 적용됨
+        안정성을 높여줌 
+    */
+
+}
+
+p,h4,h3,h2,h1,span{
+    transform: rotate(0.03deg); /* 폰트를 부드럽게 처리함*/
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center; /* 정렬 */
+    flex-direction: column; /* 배치되는 방향 */
+    flex-wrap: wrap; /* 요소가 커지면 흘러내림 (내려감)*/
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 10px;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: hotpink;
+    color: white;
+    align-items: center;
+}
+.nav__container > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: none;
+    margin: none;
+ 
+}
+
+.nav__container > ul >li{
+    margin-left: 10px;
+}
